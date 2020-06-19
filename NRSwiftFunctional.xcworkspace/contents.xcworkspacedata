@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:NRSwiftFunctionalDemo"
+      name = "NRSwiftFunctionalDemo">
+      <Group
+         location = "group:BattlesShip"
+         name = "BattlesShip">
+         <FileRef
+            location = "group:BattlesShip.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:NRSwiftFunctionalDemo"
+         name = "NRSwiftFunctionalDemo">
+         <FileRef
+            location = "group:main.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:NRSwiftFunctionalDemo.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:NRCoreImageDemo"
+      name = "NRCoreImageDemo">
+      <Group
+         location = "group:NRCoreImageDemoTests"
+         name = "NRCoreImageDemoTests">
+         <FileRef
+            location = "group:NRCoreImageDemoTests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:NRCoreImageDemo"
+         name = "NRCoreImageDemo">
+         <FileRef
+            location = "group:ViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:NRCoreImageDemo.xcdatamodeld">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:AppDelegate.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:SceneDelegate.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:NRCoreImageDemoUITests"
+         name = "NRCoreImageDemoUITests">
+         <FileRef
+            location = "group:NRCoreImageDemoUITests.swift">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:NRCoreImageDemo.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>

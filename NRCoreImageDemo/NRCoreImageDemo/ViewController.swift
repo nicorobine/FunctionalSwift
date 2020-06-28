@@ -31,7 +31,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     // MARK: - Delegate
     // MARK: UICollectionDataSource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4;
+        return 6;
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -49,12 +49,18 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 case 3:
                     cell.labelView.text = "overlay"
                     ciImage = overlay(color: UIColor.blue)(ciImage)
+                case 4:
+                    cell.labelView.text = "compose"
+                    ciImage = compose(filter: blur(radius: 10.0), with: overlay(color: UIColor.green))(ciImage)
+                case 5:
+                    cell.labelView.text = "compose"
+                    ciImage = (blur(radius: 10.0) >>> overlay(color: UIColor.green))(ciImage)
                 default:
                     cell.labelView.text = "default"
                 }
                 image = UIImage(ciImage: ciImage)
             }
-            
+            cell.imageView.contentMode = UIView.ContentMode.scaleAspectFit
             cell.imageView.image = image
         }
         
@@ -95,5 +101,5 @@ class NRCollectionCell: UICollectionViewCell {
 
 fileprivate extension String {
     static let cellIdentifier = "cell_identifier";
-    static let testImageName = "img"
+    static let testImageName = "500x500"
 }

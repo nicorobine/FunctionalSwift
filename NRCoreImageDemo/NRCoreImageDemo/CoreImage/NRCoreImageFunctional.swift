@@ -71,5 +71,15 @@ func overlay(color: UIColor) -> Filter {
     }
 }
 
+func compose(filter filter1:@escaping Filter, with filter2:@escaping Filter) -> Filter {
+    return {image in filter2(filter1(image))}
+}
+
+infix operator >>>
+
+func >>>(filter1:@escaping Filter, filter2:@escaping Filter) -> Filter {
+    return {image in filter2(filter1(image))}
+}
+
 
 
